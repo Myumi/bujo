@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  color: #5C4668;
+  text-align: center;
+  background-color: #D3BBE2;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+li{
+  list-style: none;
+}
+
+li input{
+  float: left;
+}
+
+input[type=checkbox]:checked + label{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.tasks{
+  background-color: white;
+  margin: auto;
+  border-radius: 20px;
+  justify-content: center;
+  max-width: 600px;
+  min-width: 300px;
+  box-shadow: -12px 13px 21px -9px rgba(0,0,0,0.44);
+  border: gray solid 1px;
+  padding: 5px 15px 20px 15px;
+}
+
+.task-delete{
+  color: red;
+  font-weight: strong;
+  cursor: pointer;
+  float: right;
+}
+.task-time{
+  opacity: 0.5;
+  margin-right: 2px;
+  max-width: 50px;
+  min-width: 50px;
+  float: right;
+}
+.task-name{
+  float: left;
+}
+
+.submit-name, .submit-time{
+  margin: 5px;
+}
+
+.submit-name{
+  height: 18px;
+  width: 150px;
+}
